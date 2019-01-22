@@ -1,0 +1,25 @@
+# Requirements for both Mac and Windows
+PyMySQL==0.7.2
+selenium==3.141.0
+requests==2.10.0
+json2html==1.0.1
+suds==0.4
+ijson==2.3
+psutil==5.4.6
+wmi==1.4.9
+
+# Requirements for Windows Only
+Pillow==3.3.0; sys.platform == "win32"
+pywin32; sys.platform == "win32"
+pypiwin32; sys.platform == "win32"
+
+
+# Requirements for Mac OSX Only
+# These are commented out because they are already present in our Mac images
+# but will be required when setting up environment on a fresh Mac.
+# altgraph==0.12; sys.platform == "darwin"
+# macholib==1.7; sys.platform == "darwin"
+# modulegraph==0.12.1; sys.platform == "darwin"
+# py2app==0.10; sys.platform == "darwin"
+# pyobjc==3.1.1; sys.platform == "darwin"
+# atomac==1.1.0; sys.platform == "darwin"
